@@ -1,1 +1,1 @@
-# EnergyPredictor
+# energy_consumption_predictor
