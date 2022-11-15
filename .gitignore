@@ -1,3 +1,5 @@
 * .idea/
-models/
+**/.DS_Store
 
+models/
+notebooks/.ipynb_checkpoints
