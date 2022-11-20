@@ -1,7 +1,12 @@
 ![cover_photo](./readmefile/cover.png)
-# EnergyPredictor
+# EnergyPredictor - How extreme weather and climate change affect future facility energy cost
 
-**
+*Note to readers and my dear engineers: I have been praciitng *
+
+
+## 0. 
+
+
 
 ## 1. Data
 
