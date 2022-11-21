@@ -1,7 +1,8 @@
 ![cover_photo](./readmefile/cover.png)
 # EnergyPredictor
 *Combination of a building's hourly energy consumption data and hourly weather information, EnergyPredictor predicts how changes in climate factors will impact a building's energy consumption, so that facility managers can making the best decisions among: 1. Do nothing! 2. Spend capital for upgrade and save downstream operational cost! 3. Suffer increased operational costs due to climate factors and only spend capital when required!*
-<img src='https://github.com/DelinM/EnergyPredictor/blob/main/figures/TemperatureEnergyCostProfile3.png' width='25'>
+<img src='https://github.com/DelinM/EnergyPredictor/blob/main/readmefile/Readme_1.png'>
+
 # Background & a note to my engineering friends  
   *With the rise of tech industry, an increasing number of government agencies such as Toronto Water and York Region are considering or even starting to use machine learning and artificial intelligence to improve their engineering design and decision making capabilities.*
   
@@ -22,34 +23,38 @@ All energy consumption data used for the project come from BDG2 (Building Data G
 The weather data of Ottawa is downloaded from Statistics Canada. Statistics Canada is the the national statistical office of Canada. It ensures Canadians have the key information on Canada's environment, society, and economy.
 
 # Modeling
-There are three ways that heat is transferred: conduction, convection, and radiation. Keep this key heat and mass transfer knowledge in mind, the following features are included for modelling after exploration data analysis:
+There are three ways that heat is transferred: conduction, convection, and radiation. Keep the key heat and mass transfer knowledge in mind, the following features are included for modelling after exploration data analysis:
 **Air temperature**: temperature of air in degree Celsius (ºC)
-**Cloud Coverage**: portion of the sky covered in clouds
+**Cloud Coverage**: portion of the sky covered in clouds. Radiation of heat.
 **Dew Point**: the atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form.
-**Building Footprint**: footprint of the building in square meters.
+**Wind Direction**: direction of the wind
+**Wind Speed**: speed of wind. Convection of heat.
+**Building Footprint**: footprint of the building in square meters. Convection and conduction of heat.
+**Hour**: hour during the day. Typically the energy consumption is way lower at night.
+**Weekday**: day of the week. Public facilities, for instance, are closed over the weekend so less energy consumption would be expected.
+**Month**: month of the year.
+**Sea Level Pressure**: air pressure. An indicator of weather systems at surface.
+**Meter Readings**: hourly building energy consumption data.
+The correlations of the features are shown below. Note that the correlations varies based on seasonal change. Discussions are included in the Jupyter notebook.
+<img src='https://github.com/DelinM/EnergyPredictor/blob/main/readmefile/Readme_2.png'>
+
+The data are split into training and test data sets. Three machine learning models are used for preliminary model selection: linear regression, random forest, LightGBM. Strategies such as cross validation, grid search, and random search hyperparameter turning are used to find the best dataset. As a result, random forest model is selected as the best model with the lowest error and highest accuracy.
+<img src='https://github.com/DelinM/EnergyPredictor/blob/main/readmefile/Readme_3.png'>
 
 
+# Scenarios
+For a academic facility, how would annual energy expenditure change under the following scenarios:
 
-## 3. Data Cleaning 
-
-
-
-## 4. EDA
-
-
-
-## 5. Algorithms & Machine Learning
-
-## 6. Which Dataset to choose?
+  1. Average annual temperature increase by 0.2 degree, 0.4 degree, 0.8 degree, 1.2 degrees, 1.8 degrees, 3 degrees, 5 degrees, 10 degrees, and 15 degrees.
+  2. Average annual temperature decrease by 0.2 degree, 0.4 degree, 0.8 degree, 1.2 degrees, 1.8 degrees, 3 degrees, 5 degrees, 10 degrees, and 15 degrees.
+  3. Average annual temperature increase only in spring and summer, and decrease in fall and winter by 0.2 degree, 0.4 degree, 0.8 degree, 1.2 degrees, 1.8 degrees, 3 degrees, 5 degrees, 10 degrees, and 15 degrees.
 
 
-## 7. Coldstart Threshold
+# Results
+1. Scenario 1 - Annual Temperature Increase: the model shows that average annual temperature increase will result in a lower energy use intensity and a lower energy cost. For instance, when annual average temperature increase by 0.4°C, the annual energy cost will decrease by $1.0k.
+2. Scenario 2 - Annual Temperature Decrease: the model shows that average annual temperature decrease will result in a higher energy use intensity and a higher energy cost for the target building.For instance, when annual average temperature decreased by 0.4°C, the annual energy cost will increase by $1.2k.
+3. Scenario 3 - Temperature change by Seasons: The modeled temperature condition is closer to reality: when we have hotter summer and colder winters. The colder the winter, the more energy will be consumed to maintain the building temperature. For instance, when the annual temperature varies by 0.4°C, the annual energy cost will increase $1.7k.
 
-
-## 7. Predictions
-
-
-## 8. Future Improvements
-
-
-## 9. Credits
+# Next Steps
+1. Use ARIMA combining with Random Forest Model to achieve better result.
+2. If possible, apply similar models to the facilities where energy cost would be a main cost driver.
