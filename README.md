@@ -11,9 +11,9 @@
   *However, I have to admit that to allow for this technical disruption comes to maturity, aside from master our own engineering specialization we as engineers need understand what is ML, how to use them, and most importantly, how to efficiently integrate ML into traditional engineering workflow and decision making processes. Just like process engineering or electrical engineering, ML, standalone, is a complex field. I feel lucky that as early as the winter of 2019, I started to learn coding to improve my engineering works. It had been some time and I developed extremely strong interest in coding and wanted to see how I can influence and convince more people to use it to better a traditional engineering world. I think that, if the industry has not been disrupted yet, I want to be that pusher and contributor to fuel the disruption.*
   
   *The intent of this small case study is to show what can be done using ML, and hopefully it will allow you to think outside of the engineering box in your next engineering studies. This example is related to asset management, engineering condition assessment, and engineering capital & maintenance decision making. Possible applicable examples:*
-    *1. Use **Pump SCADA(Supervisory Control and Data Acquisition) data**, **Weather data**, **HVAC(Heating, ventilation, and air conditioning) SCADA** and **Energy Consumption Data** to produce a optimized process and building mechanical control strategies for a lower energy consumption.*
-    *2. Use **Air Blower SCADA data**, **influent sewage SCADA data including flowrate and temperature**, **effluent SCADA data**, **weather information** to improve air blowers VFDs (variable-frequency drives) efficiency.*
-    *3. Better EA predictions combing public factors, human factors and engineering factors.*
+- *Use **Pump SCADA(Supervisory Control and Data Acquisition) data**, **Weather data**, **HVAC(Heating, ventilation, and air conditioning) SCADA** and **Energy Consumption Data** to produce a optimized process and building mechanical control strategies for a lower energy consumption.*
+- *Use **Air Blower SCADA data**, **influent sewage SCADA data including flowrate and temperature**, **effluent SCADA data**, **weather information** to improve air blowers VFDs (variable-frequency drives) efficiency.*
+- *Better EA predictions combing public factors, human factors and engineering factors.*
 
 # Data
 Two data sets are used for the case study: building energy consumption and weather data set.
