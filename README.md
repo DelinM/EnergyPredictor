@@ -1,10 +1,12 @@
 ![cover_photo](./readmefile/cover.png)
 # EnergyPredictor - How extreme weather and climate change affect future facility energy cost
 
-*Note to readers and my dear engineers: I have been praciitng *
+* I am a Professional Engineer praciting 
+
+have almost 4 years of experience in developing automation tools and data-focused solutions for real world business and engineering problems in an consulting environment. *
 
 
-## 0. 
+## 0. Background
 
 
 
