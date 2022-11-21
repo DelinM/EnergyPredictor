@@ -1,7 +1,7 @@
 ![cover_photo](./readmefile/cover.png)
 # EnergyPredictor
 *Combination of a building's hourly energy consumption data and hourly weather information, EnergyPredictor predicts how changes in climate factors will impact a building's energy consumption, so that facility managers can making the best decisions among: 1. Do nothing! 2. Spend capital for upgrade and save downstream operational cost! 3. Suffer increased operational costs due to climate factors and only spend capital when required!*
-<img src='https://github.com/DelinM/EnergyPredictor/blob/main/figures/TemperatureEnergyCostProfile3.png](https://github.com/DelinM/EnergyPredictor/blob/main/figures/TemperatureEnergyCostProfile3.png)' width='25'>
+<img src='https://github.com/DelinM/EnergyPredictor/blob/main/figures/TemperatureEnergyCostProfile3.png' width='25'>
 # Background & a note to my engineering friends  
   *With the rise of tech industry, an increasing number of government agencies such as Toronto Water and York Region are considering or even starting to use machine learning and artificial intelligence to improve their engineering design and decision making capabilities.*
   
