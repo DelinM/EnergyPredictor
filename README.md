@@ -1,7 +1,6 @@
 ![cover_photo](./readmefile/Cover.png)
 # EnergyPredictor
 *Integrating the building's hourly energy consumption data and hourly weather information, EnergyPredictor predicts how changes in climate factors will impact a building's energy consumption, so that facility managers can making the best decisions among: 1. Do nothing! 2. Spend capital for upgrades and save downstream operational cost! 3. Only spend capital when required!*
-<img src='https://github.com/DelinM/EnergyPredictor/blob/main/readmefile/Readme_1.png'>
 
 # Background / Note to my Engineering Colleagues
   *With the rise of tech industry, an increasing number of government agencies such as Toronto Water and York Region are considering or even starting to use machine learning and artificial intelligence to improve their engineering design and decision making capabilities.*
@@ -14,6 +13,7 @@
 - *Use **Pump SCADA(Supervisory Control and Data Acquisition) data**, **Weather data**, **HVAC(Heating, ventilation, and air conditioning) SCADA** and **Energy Consumption Data** to produce a optimized process and building mechanical control strategies for a lower energy consumption.*
 - *Use **Air Blower SCADA data**, **influent sewage SCADA data including flowrate and temperature**, **effluent SCADA data**, **weather information** to improve air blowers VFDs (variable-frequency drives) efficiency.*
 - *Better EA predictions combing public factors, human factors and engineering factors.*
+<img src='https://github.com/DelinM/EnergyPredictor/blob/main/readmefile/Readme_1.png'>
 
 # Data
 Two data sets are used for the case study: building energy consumption and weather data set.
