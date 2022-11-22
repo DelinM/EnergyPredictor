@@ -52,8 +52,8 @@ For a academic facility, how would annual energy expenditure change under the fo
 
 
 # Results
-1. Scenario 1 - Annual Temperature Increase: the model shows that average annual temperature increase will result in **a lower energy use intensity** and **a lower energy cost**. For instance, when annual average temperature increase by 0.4°C, the annual energy cost will decrease by $1.0k.
-2. Scenario 2 - Annual Temperature Decrease: the model shows that average annual temperature decrease will result in **a higher energy use intensity** and **a higher energy cost** for the target building.For instance, when annual average temperature decreased by 0.4°C, the annual energy cost will increase by $1.2k.
+1. Scenario 1 - Annual Temperature Increase: the model shows that average annual temperature increase will result in **a lower energy use intensity** and **a lower energy cost**. For instance, when annual average temperature increases by 0.4°C, the annual energy cost will decrease by $1.0k.
+2. Scenario 2 - Annual Temperature Decrease: the model shows that average annual temperature decrease will result in **a higher energy use intensity** and **a higher energy cost** for the target building.For instance, when annual average temperature decreases by 0.4°C, the annual energy cost will increase by $1.2k.
 3. Scenario 3 - Temperature change by Seasons: The modeled temperature condition is closer to reality: when we have hotter summer and colder winters. The colder the winter, the more energy will be consumed to maintain the building temperature. For instance, when the annual temperature varies by 0.4°C, the annual energy cost will increase $1.7k.
 
 # Next Steps
