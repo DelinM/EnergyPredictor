@@ -24,17 +24,17 @@ The weather data of Ottawa is downloaded from Statistics Canada. Statistics Cana
 
 # Modeling
 There are three ways that heat is transferred: conduction, convection, and radiation. Keep the key heat and mass transfer knowledge in mind, the following features are included for modelling after exploration data analysis:
-**Air temperature**: temperature of air in degree Celsius (ºC)
-**Cloud Coverage**: portion of the sky covered in clouds. Radiation of heat.
-**Dew Point**: the atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form.
-**Wind Direction**: direction of the wind
-**Wind Speed**: speed of wind. Convection of heat.
-**Building Footprint**: footprint of the building in square meters. Convection and conduction of heat.
-**Hour**: hour during the day. Typically the energy consumption is way lower at night.
-**Weekday**: day of the week. Public facilities, for instance, are closed over the weekend so less energy consumption would be expected.
-**Month**: month of the year.
-**Sea Level Pressure**: air pressure. An indicator of weather systems at surface.
-**Meter Readings**: hourly building energy consumption data.
+* **Air temperature**: temperature of air in degree Celsius (ºC)
+* **Cloud Coverage**: portion of the sky covered in clouds. Radiation of heat.
+* **Dew Point**: the atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form.
+* **Wind Direction**: direction of the wind
+* **Wind Speed**: speed of wind. Convection of heat.
+* **Building Footprint**: footprint of the building in square meters. Convection and conduction of heat.
+* **Hour**: hour during the day. Typically the energy consumption is way lower at night.
+* **Weekday**: day of the week. Public facilities, for instance, are closed over the weekend so less energy consumption would be expected.
+* **Month**: month of the year.
+* **Sea Level Pressure**: air pressure. An indicator of weather systems at surface.
+* **Meter Readings**: hourly building energy consumption data.
 The correlations of the features are shown below. Note that the correlations varies based on seasonal change. Discussions are included in the Jupyter notebook.
 <p align="center" width="100%">
 <img src='https://github.com/DelinM/EnergyPredictor/blob/main/readmefile/Readme_2.png'>
